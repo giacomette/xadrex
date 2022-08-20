@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabuleiro {
+  width: 800px;
+  height: 800px;
+  margin: 32px auto;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.area img {
+  cursor: pointer;
+}
+
+.area-drop {
+  background-color: green !important;
+}
+
+.area-no-drop {
+  background-color: red !important;
+}
+
+.area-par {
+  background-color: black;
+  /* grid-column: 2/4; */
+}
+
+.area-impar {
+  background-color: white;
+  /* grid-column: 2/4; */
+}
+
+.cemiterio {
+  border: 2px solid black;
+  width: 200px;
+  height: 800px;
+  padding: 8px;
+  text-align: center;
+  position: absolute;
+  left: 10%;
+  overflow-y: auto;
+}
